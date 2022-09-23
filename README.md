@@ -32,11 +32,10 @@ Promises é um objeto Javascript com a promessa de que algo vai será realizado.
 
 ## Uma promise tem quatro estágios
 
-[x] Pending: Estado inicail, assim que o Objeto da promessa é iniciado.
+[x] Pending: Estado inicial, assim que o Objeto da promessa é iniciado.
 
 [x] Fulfilled: A promessa foi concluída com sucesso.
 
 [x] Rejected: A promessa foi rejeitada, houve um erro.
 
 [x] Settled: Seja com sucesso ou com erro, ela foi finalmente concluída.
-

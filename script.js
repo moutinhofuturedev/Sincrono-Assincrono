@@ -16,3 +16,28 @@ https.get(API, response => { // o response retorna um tempo depois
     return console.log(response.statusCode)
 })
 console.log('conectando API')
+
+// Promisse => a promessa de algo vai acontecer, pode dar certo ou errado, mas algo vai acontecer
+// Exemplo
+let aceitar = true
+
+console.log('pedir Uber')
+const promessa = new Promise((resolve, reject) => {
+    if(aceitar) {
+        return setTimeout(() => {
+            resolve('seu Uber chegou')
+        }, 5000)
+    }else {
+        return setTimeout(() => {
+            reject('seu pedido foi negado')
+        }, 5000)
+    }
+})
+
+promessa.then((res) => {
+    console.log(res)
+}).catch((error) => {
+    console.log(error)
+}).finally(() => {
+    console.log('processo finalizado')
+})
